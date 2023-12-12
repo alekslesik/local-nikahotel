@@ -55,7 +55,7 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 	<?$APPLICATION->SetTemplateCSS(SITE_TEMPLATE_PATH ."/css/cart.css")?>
 	<?
 	if($theme['string'])
-		$APPLICATION->AddHeadString($theme['string']);	
+		$APPLICATION->AddHeadString($theme['string']);
 	if($theme['path'])
 		$APPLICATION->SetTemplateCSS($theme['path']);
 	?>
@@ -93,7 +93,7 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 	<?endif;?>
 	<?$APPLICATION->AddHeadScript(SITE_DIR ."lib/calc/js/calc.js")?>
 	<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH ."/lib/inputmask/jquery.inputmask.js")?>
-	<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH ."/js/main.js")?>	
+	<?$APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH ."/js/main.js")?>
 	<!-- Open Graph -->
 	<meta property="og:title" content="<?$APPLICATION->ShowProperty("title")?>">
 	<meta property="og:description" content="<?=$APPLICATION->ShowProperty("description")?>">
@@ -117,7 +117,7 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 			<?if(!CSite::InDir(SITE_DIR.'index.php')):?>
 			<div class="header-inner">
 				<?endif;?>
-				<div class="container">		
+				<div class="container">
 					<div class="header-top">
 						<div class="row align-items-center">
 							<div class="col-lg-auto text-xs-center">
@@ -169,8 +169,8 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 							<nav class="header-top-menu menu-line">
 							<?endif;?>
 								<?$APPLICATION->IncludeComponent(
-										"bitrix:menu", 
-										"mn_flmenu_top", 
+										"bitrix:menu",
+										"mn_flmenu_top",
 										array(
 											"ROOT_MENU_TYPE" => "top",
 											"MENU_CACHE_TYPE" => "A",
@@ -193,7 +193,7 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 							</nav>
 						</div>
 					</div>
-					<!-- /top-menu -->	
+					<!-- /top-menu -->
 					<?if(CSite::InDir(SITE_DIR.'index.php')):?>
 					<?if($homeBannerForm=='Y'):?>
 					<!-- FORM -->
@@ -208,10 +208,10 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 			<?if(CSite::InDir(SITE_DIR.'index.php')):?>
 			<!-- header-slider -->
 			<?$APPLICATION->IncludeComponent("bitrix:main.include", "", array("AREA_FILE_SHOW" => "file", "PATH" => SITE_DIR."includes/index_slider.php"), false);?>
-			<!-- /header-slider -->	
-			<?endif;?>	
+			<!-- /header-slider -->
+			<?endif;?>
 			<?if($fixHeader=='Y'):?>
-			<!-- header-fix -->	
+			<!-- header-fix -->
 			<div class="header-fix">
 				<?$APPLICATION->IncludeFile(SITE_DIR."includes/header_fix.php", Array(), Array("MODE" => "html", "NAME" => "Header Fix"));?>
 			</div>
@@ -236,8 +236,8 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 								<?endif;?>
 								<nav id="sidebar_menu">
 									<?$APPLICATION->IncludeComponent(
-										"bitrix:menu", 
-										"sections_menu", 
+										"bitrix:menu",
+										"sections_menu",
 										array(
 											"ALLOW_MULTI_SELECT" => "Y",
 											"CHILD_MENU_TYPE" => "left",
@@ -289,13 +289,13 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 								<?endif;?>
 							</div>
 						</div>
-						<?endif;?>	
-						<div class="content-box">	
+						<?endif;?>
+						<div class="content-box">
 							<?if(!CSite::InDir(SITE_DIR.'index.php')):?>
 										<div class="breadcrumb">
 											<?$APPLICATION->IncludeComponent(
-												"bitrix:breadcrumb", 
-												".default", 
+												"bitrix:breadcrumb",
+												".default",
 												array(
 													"START_FROM" => "0",
 													"PATH" => "",
@@ -304,7 +304,7 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 												false
 											);?>
 										</div>
-										<h1><?$APPLICATION->ShowTitle(false);?></h1>	
+										<h1><?$APPLICATION->ShowTitle(false);?></h1>
 							<?else:?>
 							<?@include(str_replace('//', '/', $_SERVER['DOCUMENT_ROOT'].'/'.SITE_DIR.'/index_main_blocks.php'));?>
 							<?endif;?>
