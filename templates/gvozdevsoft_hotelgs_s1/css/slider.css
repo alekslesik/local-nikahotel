@@ -1,0 +1,10 @@
+/*slider main page */
+#header .header-main-page {
+height: 750px;
+}
+#header .header-slider__inner {
+height: 750px;
+}
+#header .header-form__inner {
+margin-top: 115px;
+}

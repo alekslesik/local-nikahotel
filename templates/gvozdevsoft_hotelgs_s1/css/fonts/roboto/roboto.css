@@ -1,0 +1,76 @@
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-Light-300.woff2') format('woff2'),
+		url('Roboto-Light-300.woff') format('woff'),
+		url('Roboto-Light-300.ttf') format('truetype'),
+		url('Roboto-Light-300.svg#Roboto') format('svg');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-LightItalic-300.woff2') format('woff2'),
+		url('Roboto-LightItalic-300.woff') format('woff'),
+		url('Roboto-LightItalic-300.ttf') format('truetype'),
+		url('Roboto-LightItalic-300.svg#Roboto') format('svg');
+	font-style: italic;
+	font-weight: 300;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-Regular-400.woff2') format('woff2'),
+		url('Roboto-Regular-400.woff') format('woff'),
+		url('Roboto-Regular-400.ttf') format('truetype'),
+		url('Roboto-Regular-400.svg#Roboto') format('svg');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-RegularItalic-400.woff2') format('woff2'),
+		url('Roboto-RegularItalic-400.woff') format('woff'),
+		url('Roboto-RegularItalic-400.ttf') format('truetype'),
+		url('Roboto-RegularItalic-400.svg#Roboto') format('svg');
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-Medium-500.woff2') format('woff2'),
+		url('Roboto-Medium-500.woff') format('woff'),
+		url('Roboto-Medium-500.ttf') format('truetype'),
+		url('Roboto-Medium-500.svg#Roboto') format('svg');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-MediumItalic-500.woff2') format('woff2'),
+		url('Roboto-MediumItalic-500.woff') format('woff'),
+		url('Roboto-MediumItalic-500.ttf') format('truetype'),
+		url('Roboto-MediumItalic-500.svg#Roboto') format('svg');
+	font-style: italic;
+	font-weight: 500;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-Bold-600.woff2') format('woff2'),
+		url('Roboto-Bold-600.woff') format('woff'),
+		url('Roboto-Bold-600.ttf') format('truetype'),
+		url('Roboto-Bold-600.svg#Roboto') format('svg');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: Roboto;
+	src:url('Roboto-BoldItalic-600.woff2') format('woff2'),
+		url('Roboto-BoldItalic-600.woff') format('woff'),
+		url('Roboto-BoldItalic-600.ttf') format('truetype'),
+		url('Roboto-BoldItalic-600.svg#Roboto') format('svg');
+	font-style: italic;
+	font-weight: 600;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+}

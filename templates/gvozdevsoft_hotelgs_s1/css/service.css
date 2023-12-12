@@ -1,0 +1,17 @@
+.arrow_slider {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+}
+.arrow_slider .arrow_left {
+  position: absolute;
+  left: 10px;
+}
+.arrow_slider .arrow_right {
+  position: absolute;
+  right: 10px;
+}
+.arrow_slider .fa {
+  font-size: 4em;
+}

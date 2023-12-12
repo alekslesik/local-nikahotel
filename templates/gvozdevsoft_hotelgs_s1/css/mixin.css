@@ -1,0 +1,17 @@
+/* color */
+/* mixin */
+.br {
+  border-radius: 4px;
+}
+.opacity-img {
+  opacity: 0.8;
+}
+.opacity-btn {
+  opacity: 0.8;
+}
+.link-hover {
+  opacity: 0.8;
+}
+.box-hover {
+  box-shadow: 0 0 23px 0 rgba(0, 0, 0, 0.2);
+}
