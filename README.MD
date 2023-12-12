@@ -1,0 +1,1 @@
+### Template for nika-hotel.ru
