@@ -13,7 +13,7 @@ $this->setFrameMode(true);
 					<?if($arSection["PICTURE"]):?>
 					<a href="<?=$arSection["SECTION_PAGE_URL"]?>" class="catalog-section-list__link-img">
 						<span class="catalog-section-list__img"><?
-						$file = CFile::ResizeImageGet(($arSection["PICTURE"]), array('width'=>250, 'height'=>250), BX_RESIZE_IMAGE_PROPORTIONAL, true);                
+						$file = CFile::ResizeImageGet(($arSection["PICTURE"]), array('width'=>250, 'height'=>250), BX_RESIZE_IMAGE_PROPORTIONAL, true);
 						echo '<img src="'.$file['src'].'" alt="'.$arSection["NAME"].'" title="'.$arSection["NAME"].'" class="catalog-section-list__img-img">';
 						?></span>
 					</a>
@@ -23,9 +23,6 @@ $this->setFrameMode(true);
 							<a href="<?=$arSection["SECTION_PAGE_URL"]?>" class="catalog-section-list__link-title">
 								<?=$arSection["NAME"]?>
 							</a>
-						</div>
-						<div class="catalog-section-list__text-desc">
-							<?=GetMessage("NEWS_PROJECTS_NAME")?> (<?=$arSection["ELEMENT_CNT"]?>)
 						</div>
 					</div>
 				</div>
