@@ -25,9 +25,9 @@ $this->setFrameMode(true);
 			<div class="col-lg-7">
 				<div class="catalog-detail__img-box">
 					<?if($arResult["DETAIL_PICTURE"]):?>
-					<a href="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" class="gallery" data-fancybox="gallery_product" itemprop="image">			
+					<a href="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" class="gallery" data-fancybox="gallery_product" itemprop="image">
 						<?
-						$file = CFile::ResizeImageGet(($arResult["DETAIL_PICTURE"]), array('width'=>617, 'height'=>470), BX_RESIZE_IMAGE_PROPORTIONAL, true);               
+						$file = CFile::ResizeImageGet(($arResult["DETAIL_PICTURE"]), array('width'=>1000, 'height'=>760), BX_RESIZE_IMAGE_PROPORTIONAL, true);
 						echo '<img src="'.$file['src'].'" alt="'.$arResult["NAME"].'" title="'.$arResult["NAME"].'" class="catalog-detail__img-img">';
 						?>
 					</a>
@@ -44,93 +44,6 @@ $this->setFrameMode(true);
 						<img src="<?=$preview["src"]?>" alt="<?if($img["DESCRIPTION"]):?><?=$img["DESCRIPTION"]?><?else:?><?=$arResult["NAME"]?><?endif;?>" title="<?if($img["DESCRIPTION"]):?><?=$img["DESCRIPTION"]?><?else:?><?=$arResult["NAME"]?><?endif;?>">
 					</a>
 					<?endforeach?>
-				</div>
-				<?endif;?>
-			</div>
-			<div class="col-lg-5">
-				<div class="catalog-detail__status-box">
-					<?if($arResult["PROPERTIES"]["ATT_ARTICLE"]["VALUE"]):?>
-					<div class="catalog-detail__article">
-						<?=GetMessage("ARTICLE")?>: <?=$arResult["PROPERTIES"]["ATT_ARTICLE"]["VALUE"]?>
-					</div>
-					<?endif;?>
-					<?if($arResult["PROPERTIES"]["ATT_STATUS"]["VALUE"]):?>
-					<div class="catalog-detail__status">
-						<?if($arResult["PROPERTIES"]["ATT_STATUS"]["VALUE_XML_ID"] == "status_nal"):?>
-						<div class="catalog-detail__status-nal">
-							<?=$arResult["PROPERTIES"]["ATT_STATUS"]["VALUE"];?>
-						</div>
-						<?endif?>
-						<?if($arResult["PROPERTIES"]["ATT_STATUS"]["VALUE_XML_ID"] == "status_nonal"):?>
-						<div class="catalog-detail__status-nonal">
-							<?=$arResult["PROPERTIES"]["ATT_STATUS"]["VALUE"];?>
-						</div>
-						<?endif?>
-						<?if($arResult["PROPERTIES"]["ATT_STATUS"]["VALUE_XML_ID"] == "status_zakaz"):?>
-						<div class="catalog-detail__status-zakaz">
-							<?=$arResult["PROPERTIES"]["ATT_STATUS"]["VALUE"];?>
-						</div>
-						<?endif?>
-						<?if($arResult["PROPERTIES"]["ATT_STATUS"]["VALUE_XML_ID"] == "status_time"):?>
-						<div class="catalog-detail__status-time">
-							<?=$arResult["PROPERTIES"]["ATT_STATUS"]["VALUE"];?>
-						</div>
-						<?endif?>
-					</div>
-					<?endif;?>
-				</div>
-				<div class="catalog-detail__price-box">
-					<div class="catalog-detail__price">
-						<?if($arResult["PROPERTIES"]["ATT_PRICE_OT"]["VALUE"]):?>
-						<div class="catalog-detail__price-ot">
-							<?=$arResult["PROPERTIES"]["ATT_PRICE_OT"]["VALUE"]?>
-						</div>
-						<?endif;?>
-						<?if($arResult["PROPERTIES"]["ATT_PRICE"]["VALUE"]):?>
-						<span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-							<meta itemprop="price" content="<?=$arResult["PROPERTIES"]["ATT_PRICE"]["VALUE"]?>">
-							<meta itemprop="priceCurrency" content="RUB">
-							<span class="pricespace"><?=$arResult["PROPERTIES"]["ATT_PRICE"]["VALUE"]?></span>
-						</span>
-						<?endif;?>
-						<?if($arResult["PROPERTIES"]["ATT_PRICE_ED"]["VALUE"]):?>
-						<div class="catalog-detail__price-rub">
-							<?=$arResult["PROPERTIES"]["ATT_PRICE_ED"]["VALUE"]?>
-						</div>
-						<?endif;?>
-					</div>
-					<?if($arResult["PROPERTIES"]["ATT_PRICE_OLD"]["VALUE"]):?>
-					<div class="catalog-detail__price-old">
-						<?if($arResult["PROPERTIES"]["ATT_PRICE_OT"]["VALUE"]):?>
-						<?=$arResult["PROPERTIES"]["ATT_PRICE_OT"]["VALUE"]?>
-						<?endif;?>
-						<span class="pricespace"><?=$arResult["PROPERTIES"]["ATT_PRICE_OLD"]["VALUE"]?></span>
-						<?if($arResult["PROPERTIES"]["ATT_PRICE_ED"]["VALUE"]):?> <?=$arResult["PROPERTIES"]["ATT_PRICE_ED"]["VALUE"]?>
-						<?endif;?>
-					</div>
-					<?endif;?>
-				</div>
-				<div class="catalog-detail__preview" itemprop="description">
-					<?if($arResult["PREVIEW_TEXT"]):?>
-					<?=$arResult['PREVIEW_TEXT'];?>
-					<?endif?>
-				</div>
-				<?if($arParams["CART_DETAIL"] === "Y"):?>
-				<div class="catalog-detail__btn catalog-cart-input catalog-cart-input-detail">
-					<div class='catalog-cart-input-wrap catalog-cart-input-detail-wrap'>
-						<div class='catalog-cart-input-minus catalog-cart-input-detail-minus'><i class="fa fa-minus" aria-hidden="true"></i></div>
-						<input type='input' name='quantity' value='1'/>
-						<div class='catalog-cart-input-plus catalog-cart-input-detail-plus'><i class="fa fa-plus" aria-hidden="true"></i></div>
-					</div>
-					<div class="btn-link catalog-cart-add catalog-cart-input-btn catalog-cart-input-detail-btn" data-product="<?=$arResult["ID"]?>" >
-						<?=GetMessage("BTN_CART")?>
-					</div>
-				</div>
-				<?else:?>
-				<div class="catalog-detail__btn">
-					<a data-fancybox data-src="#form-popup-catalog" href="javascript:;" class="btn-link catalog-detail__btn-link">
-						<?=GetMessage("BTN_ORDER")?>
-					</a>
 				</div>
 				<?endif;?>
 			</div>
