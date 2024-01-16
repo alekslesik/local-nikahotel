@@ -1,10 +1,15 @@
 .services-news-list .row {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-wrap: nowrap;
 	flex-wrap: nowrap;
 	margin-right: -15px;
 	margin-left: -15px;
 }
 
+@media (max-width: 428px) {
+  .services-news-list .row {
+		display: flex;
+		flex-wrap: wrap;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+}
