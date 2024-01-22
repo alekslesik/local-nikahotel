@@ -26,7 +26,7 @@ $this->setFrameMode(true);
 				<div class="rooms-detail__img-box">
 					<a href="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" class="gallery" data-fancybox="gallery_product" itemprop="image">
 						<?
-						$file = CFile::ResizeImageGet(($arResult["DETAIL_PICTURE"]), array('width'=>617, 'height'=>470), BX_RESIZE_IMAGE_PROPORTIONAL, true);               
+						$file = CFile::ResizeImageGet(($arResult["DETAIL_PICTURE"]), array('width'=>617, 'height'=>470), BX_RESIZE_IMAGE_PROPORTIONAL, true);
 						echo '<img src="'.$file['src'].'" alt="'.$arResult["NAME"].'" title="'.$arResult["NAME"].'" class="rooms-detail__img-img">';
 						?>
 					</a>
@@ -81,11 +81,20 @@ $this->setFrameMode(true);
 					<?=$arResult['PREVIEW_TEXT'];?>
 					<?endif?>
 				</div>
-				<div class="rooms-detail__btn">
+
+				<?php if ($arResult["PROPERTIES"]["LINK_BINOVO"]["VALUE"] === "") { ?>
+					<div class="rooms-detail__btn">
 					<a data-fancybox data-src="#form-popup-catalog" href="javascript:;" class="btn-link rooms-detail__btn-link">
-						<?=GetMessage("BTN_ORDER")?>
+						<?= GetMessage("BTN_ORDER")?>
 					</a>
 				</div>
+				<?php } else { ?>
+					<div class="rooms-detail__btn">
+					<a data href=<?=$arResult["PROPERTIES"]["LINK_BINOVO"]["VALUE"]  ?> class="btn-link rooms-detail__btn-link">
+						<?= GetMessage("BTN_ORDER")?>
+					</a>
+				<?php } ?>
+
 			</div>
 		</div>
 	</div>
