@@ -160,7 +160,7 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 						</div>
 					</div>
 					<!-- /header-top -->
-					<div class="row">
+					<div class="row mobile-menu-right">
 						<div class="col-lg">
 							<?if(CSite::InDir(SITE_DIR.'index.php')):?>
 							<nav class="header-top-menu menu-line-main-page">
