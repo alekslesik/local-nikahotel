@@ -26,15 +26,15 @@ $this->setFrameMode(true);
 						<div class="section-company__metric-img">
 							<?if($arItem["PREVIEW_PICTURE"]):?>
 							<?
-							$file = CFile::ResizeImageGet(($arItem["PREVIEW_PICTURE"]), array('width'=>65, 'height'=>65), BX_RESIZE_IMAGE_PROPORTIONAL, true);                
+							$file = CFile::ResizeImageGet(($arItem["PREVIEW_PICTURE"]), array('width'=>65, 'height'=>65), BX_RESIZE_IMAGE_PROPORTIONAL, true);
 							echo '<img src="'.$file['src'].'" alt="'.$arItem["NAME"].'" title="'.$arItem["NAME"].'" />';
 							?>
 							<?endif;?>
 						</div>
-						<?else:?> 
+						<?else:?>
 						<div class="section-company__metric-nomber">
 							<?if($arItem["PROPERTIES"]["ATT_NUMBER"]["VALUE"]):?>
-							<?=$arItem["PROPERTIES"]["ATT_NUMBER"]["~VALUE"];?> 
+							<?=$arItem["PROPERTIES"]["ATT_NUMBER"]["~VALUE"];?>
 							<?endif;?>
 						</div>
 						<?endif?>
@@ -44,7 +44,7 @@ $this->setFrameMode(true);
 								<a href="<?=$arItem["PROPERTIES"]["ATT_LINK"]["VALUE"];?> " class="section-company__metric-link">
 									<?=$arItem["NAME"]?>
 								</a>
-								<?else:?> 
+								<?else:?>
 								<?=$arItem["NAME"]?>
 								<?endif;?>
 							</div>

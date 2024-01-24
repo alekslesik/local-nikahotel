@@ -62,7 +62,7 @@ $this->setFrameMode(true);
 
 
 			<div class="left" id="_bn_widget_">
-   <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a>
+   <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank"></a>
 </div>
 <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
 <script type="text/javascript">

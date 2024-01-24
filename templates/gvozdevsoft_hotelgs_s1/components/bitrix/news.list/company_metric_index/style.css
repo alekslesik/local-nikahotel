@@ -1,0 +1,11 @@
+
+
+@media (max-width: 575px) {
+  .align-items-center {
+    justify-content: center;
+  }
+
+ div.section-company__box-metric div.row.align-items-center .col-lg.col-md-6.pt-15.pb-15 {
+    width: 66%;
+  }
+}
