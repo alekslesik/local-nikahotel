@@ -1,8 +1,11 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
 ?>
+
 <div class="header-slider owl-carousel owl-theme">
+
 	<? foreach ($arResult["ITEMS"] as $arItem) : ?>
+
 		<? if ($arItem["PROPERTIES"]["ATT_VIDEO_IMG"]["VALUE_XML_ID"] == "data_video") : ?>
 			<? $video = CFile::GetPath($arItem["PROPERTIES"]["ATT_VIDEO"]["VALUE"]); ?>
 			<div class="header-slider__img video-bg">
@@ -85,6 +88,7 @@ $this->setFrameMode(true);
         button_font_size: "14",
         button_height: "42",
         font_type: "inter",
+        title: "Бронирование номеров. Гарантия заселения",
         title_color: "#242742",
         title_color_mobile: "#242742",
         title_size: "22",
@@ -93,12 +97,12 @@ $this->setFrameMode(true);
         inp_bordhover: "#dedfe3",
         inp_bordcolor: "#BCBCBC",
         inp_alpha: "100",
-        btn_background: "#1875F0",
-        btn_background_over: "#1850D2",
+        btn_background: "#6495ED",
+        btn_background_over: "#1163f0",
         btn_textcolor: "#FFFFFF",
         btn_textover: "#FFFFFF",
-        btn_bordcolor: "#1875F0",
-        btn_bordhover: "#1850D2",
+        btn_bordcolor: "#6495ED",
+        btn_bordhover: "#1163f0",
         adults_default: "1",
         dates_preset: "on",
         dfrom_today: "on",
@@ -106,6 +110,8 @@ $this->setFrameMode(true);
         dto_nextday: "on",
         dto_value: "2",
         cancel_color: "#FFFFFF",
+        url: "https://clevermetrics.ru/wubook/",
+        down_mode: "on",
         switch_mobiles_width: "800",
     });
    });
