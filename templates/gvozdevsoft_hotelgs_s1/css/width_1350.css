@@ -5,13 +5,14 @@
 }
 #flvmenu {
     max-width: 1350px;
+    text-align: center;
 }
 .hdslide_inn {
     max-width: 1350px;
 }
 #flvmenu > ul > li > a {
-    padding-left: 42px;
-    padding-right: 42px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .services-news-detail__form-box {
     padding-top: 50px;
