@@ -104,6 +104,8 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 	<?else:?>
 	<meta property="og:image" content="<?=SITE_SERVER_PROTOCOL . SITE_SERVER_NAME . $curPage?>images/logo.png">
 	<?endif;?>
+	<script src="https://wubook.net/js/wbbook.jgz"></script>
+
 	<!-- /Open Graph -->
 	<link type="image/x-icon" rel="shortcut icon" href="<?if($faviconPath):?><?=$faviconPath?><?else:?><?=SITE_DIR?>favicon.ico<?endif;?>">
 </head>

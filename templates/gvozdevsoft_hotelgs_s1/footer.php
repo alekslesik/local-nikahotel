@@ -145,11 +145,42 @@
 				</div>
 			</div>
 		</div>
+<style>
+.wu_otzyv {
+max-height: 53px;
+position: fixed;
+overflow: hidden;
+bottom: 0;
+transition-property: max-height;
+transition-duration: .5s;
+z-index: 999999999;
+}
+.wu_otzyv.show,
+.wu_otzyv:hover {
+max-height: 425px;
+}
+</style>
+<div class="wu_otzyv">
+<div id="_wbordfeeds_">
+<a href="http://en.wubook.net/services/booking-engine/" style="display: block; margin-top: 5px; text-decoration:none;border:none" target="_blank">
+<img src="https://wubook.net/imgs/default/booking_by_wu.gif" alt="hotels wubook booking engine" title="Hotel and tourism technologies" style="border:none;text-decoration:none"/>
+</a>
+</div>
+<script>
+var WuBook = new _WuBook(1409911856);
+var wbparams = {
+'theme': 'atlantic',
+layout: 0
+};
+WuBook.design_feeds_widget("_wbordfeeds_", wbparams);
+</script>
+</div>
 	</footer>
 	<!-- form popup -->
 	<?$APPLICATION->IncludeFile(SITE_DIR."lib/feedback/forms/form_popup_callback.php", Array(), Array("MODE" => "html", "NAME" => "Form Popup Callback"));?>
 	<?$APPLICATION->IncludeFile(SITE_DIR."lib/feedback/forms/form_popup_request.php", Array(), Array("MODE" => "html", "NAME" => "Form Popup Request"));?>
 	<?$APPLICATION->IncludeFile(SITE_DIR."lib/feedback/forms/form_popup_estimate.php", Array(), Array("MODE" => "html", "NAME" => "Form Popup Estimate"));?>
 	<!-- /form popup -->
+
 </body>
 </html>
