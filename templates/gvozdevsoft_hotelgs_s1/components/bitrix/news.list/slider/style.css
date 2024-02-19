@@ -1,3 +1,9 @@
 #_bn_widget_ > div:nth-child(1){
   z-index: 1 !important;
 }
+
+
+#_bn_widget_ {
+  margin: -600px auto 200px 300px !important;
+  z-index: 9999;
+}
