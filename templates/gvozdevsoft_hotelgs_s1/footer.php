@@ -145,6 +145,7 @@
 				</div>
 			</div>
 		</div>
+
 <style>
 .wu_otzyv {
 max-height: 53px;
@@ -174,13 +175,41 @@ layout: 0
 };
 WuBook.design_feeds_widget("_wbordfeeds_", wbparams);
 </script>
-</div>
+
+
+
+
+
 	</footer>
 	<!-- form popup -->
 	<?$APPLICATION->IncludeFile(SITE_DIR."lib/feedback/forms/form_popup_callback.php", Array(), Array("MODE" => "html", "NAME" => "Form Popup Callback"));?>
 	<?$APPLICATION->IncludeFile(SITE_DIR."lib/feedback/forms/form_popup_request.php", Array(), Array("MODE" => "html", "NAME" => "Form Popup Request"));?>
 	<?$APPLICATION->IncludeFile(SITE_DIR."lib/feedback/forms/form_popup_estimate.php", Array(), Array("MODE" => "html", "NAME" => "Form Popup Estimate"));?>
 	<!-- /form popup -->
-
 </body>
+<script>
+// Функция, которая будет вызываться при каждом изменении атрибутов целевого элемента
+const changeTopStyle = function(mutationsList, observer) {
+    for(let mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+            mutation.target.style.top = '250px';
+        }
+    }
+};
+
+// Настройка наблюдателя с указанием за какими изменениями следить
+const config = { attributes: true, childList: false, subtree: false, attributeFilter: ['style'] };
+
+// Создание экземпляра MutationObserver
+const observer = new MutationObserver(changeTopStyle);
+
+// Применение наблюдателя к каждому элементу с классом bottom-fixed-block
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('.bottom-fixed-block');
+    elements.forEach(function(element) {
+        observer.observe(element, config);
+    });
+});
+
+</script>
 </html>
