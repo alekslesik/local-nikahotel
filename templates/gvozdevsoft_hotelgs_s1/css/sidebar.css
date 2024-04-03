@@ -28,6 +28,7 @@
 #sidebar .sidebar-news-box {
   position: relative;
   margin-bottom: 70px;
+  padding-top: 25px;
 }
 #sidebar .title {
   font-size: 1.1em;

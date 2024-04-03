@@ -1,6 +1,6 @@
 #section_element_menu {
     position: relative;
-    margin-bottom: 50px;
+    margin-top: 25px;
     overflow: hidden;
 }
 ul#vertical-multilevel-menu {
@@ -61,7 +61,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu li.menu-element-items > a.parent::before{
     color: #000;
@@ -70,7 +70,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu > li.menu-section-active2 > a::before {
     color: #fff;
@@ -79,7 +79,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu li.menu-element-items-active2 > a.parent::before {
     color: #fff;
@@ -88,7 +88,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu ul#vertical-multilevel-menu > li.menu-section-drive-active > a::before {
     color: #fff;
@@ -97,7 +97,7 @@ ul#vertical-multilevel-menu li a {
     font-size: 18px;
     font-weight: normal;
     position: relative;
-    padding-right: 10px; 
+    padding-right: 10px;
 }
 #section_element_menu .menu-element-list {
     display:none;
