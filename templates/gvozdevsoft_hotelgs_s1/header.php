@@ -233,9 +233,9 @@ $sidebarFixed = Settings::get('sidebar_fixed',SITE_ID,'Y');
 						<div id="sidebar">
 							<div class="sidebar_adaptive">
 								<?if($sidebarFilter=='Y'):?>
-								<div id="sidebar_filter_catalog">
+								<!-- <div id="sidebar_filter_catalog">
 									<?$APPLICATION->IncludeFile(SITE_DIR."includes/sidebar_filter_catalog.php", Array(), Array("MODE" => "html", "NAME" => "Filter Catalog"));?>
-								</div>
+								</div> -->
 								<?endif;?>
 								<nav id="sidebar_menu">
 									<?$APPLICATION->IncludeComponent(
