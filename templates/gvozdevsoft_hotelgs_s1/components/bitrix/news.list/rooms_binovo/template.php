@@ -7,8 +7,9 @@ if (!empty($arResult['ITEMS'])) {
 	);
 ?>
 <div class="left" id="_bn_widget_">
-   <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank">Bnovo</a>
+   <a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank"></a>
 </div>
+<br>
 <script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
 <script type="text/javascript">
   (function(){
