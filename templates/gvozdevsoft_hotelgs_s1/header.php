@@ -239,64 +239,6 @@ $sidebarFixed = Settings::get('sidebar_fixed', SITE_ID, 'Y');
 						<div class="col wrapper-inner">
 							<div id="sidebar">
 								<div class="sidebar_adaptive">
-
-
-									<div class="left" id="_bn_widget_">
-										<a href="https://bnovo.ru/" id="_bnovo_link_" target="_blank"></a>
-									</div>
-									<script src="//widget.reservationsteps.ru/js/bnovo.js"></script>
-									<script type="text/javascript">
-										(function() {
-											Bnovo_Widget.init(function() {
-												Bnovo_Widget.open('_bn_widget_', {
-													type: "vertical",
-													uid: "1d61c305-1caa-4f27-9ca4-a7d836d0db34",
-													lang: "ru",
-													width: "270",
-													width_mobile: "270",
-													background: "#ffffff",
-													background_mobile: "#ffffff",
-													bg_alpha: "100",
-													bg_alpha_mobile: "100",
-													border_color_mobile: "#C6CAD3",
-													padding: "0",
-													padding_mobile: "24",
-													border_radius: "8",
-													button_font_size: "14",
-													button_height: "42",
-													font_type: "inter",
-													title: "Бронирование номеров. Гарантия заселения",
-													title_color: "#242742",
-													title_color_mobile: "#242742",
-													title_size: "22",
-													title_size_mobile: "22",
-													inp_color: "#242742",
-													inp_bordhover: "#dedfe3",
-													inp_bordcolor: "#BCBCBC",
-													inp_alpha: "100",
-													btn_background: "#6495ED",
-													btn_background_over: "#1850D2",
-													btn_textcolor: "#FFFFFF",
-													btn_textover: "#FFFFFF",
-													btn_bordcolor: "#1875F0",
-													btn_bordhover: "#1850D2",
-													min_age: "0",
-													max_age: "17",
-													adults_default: "1",
-													dates_preset: "on",
-													dfrom_today: "on",
-													dfrom_value: "2",
-													dto_nextday: "on",
-													dto_value: "2",
-													cancel_color: "#FFFFFF",
-													url: "https://clevermetrics.ru/wubook/",
-													switch_mobiles_width: "800",
-												});
-											});
-										})();
-									</script>
-
-
 									<? if ($sidebarFilter == 'Y') : ?>
 										<!-- <div id="sidebar_filter_catalog">
 									<? $APPLICATION->IncludeFile(SITE_DIR . "includes/sidebar_filter_catalog.php", array(), array("MODE" => "html", "NAME" => "Filter Catalog")); ?>
